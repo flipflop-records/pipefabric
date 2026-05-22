@@ -4,7 +4,7 @@
 // PipeFabric
 // =============================================================================
 // File    : pf_skid_buffer.sv
-// Author  : Vladislav Temnyakov
+// Author  : flipflop-records
 // Version : 0.1.0
 // Created : 2026-05-22
 //
@@ -41,10 +41,10 @@ module pf_skid_buffer #(
     input logic i_rst_n,
 
     // Input stream
-    input  pf_stream_if.slave  i_s,
+    pf_stream_if.slave  i_s,
 
     // Output stream
-    output pf_stream_if.master o_m
+    pf_stream_if.master o_m
 );
 
     // Main output registers

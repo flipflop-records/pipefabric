@@ -1,4 +1,4 @@
-`timescale 1ps/1ps
+`timescale 1ns / 1ps
 `default_nettype none
 // =============================================================================
 // PipeFabric
@@ -34,10 +34,10 @@ module pf_pipeline_stage #(
     input logic i_rst_n,
 
     // Input stream
-    input  pf_stream_if.slave  i_s,
+    pf_stream_if.slave  i_s,
 
     // Output stream
-    output pf_stream_if.master o_m
+    pf_stream_if.master o_m
 );
     import pf_logic_pkg::*;
 
