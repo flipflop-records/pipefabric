@@ -56,7 +56,7 @@ module pf_skid_buffer #(
     logic [7:0]       r_user_q;
 
     // Skid registers
-    logic 					  r_skid_valid_q;
+    logic             r_skid_valid_q;
     logic [WIDTH-1:0] r_skid_data_q;
     logic             r_skid_last_q;
     logic             r_skid_error_q;
