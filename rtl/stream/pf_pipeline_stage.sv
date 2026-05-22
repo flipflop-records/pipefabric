@@ -1,3 +1,5 @@
+`timescale 1ps/1ps
+`default_nettype none
 // =============================================================================
 // PipeFabric
 // =============================================================================
@@ -86,3 +88,5 @@ module pf_pipeline_stage #(
     assign i_s.ready = !r_valid_q || o_m.ready;
 
 endmodule
+
+`default_nettype wire

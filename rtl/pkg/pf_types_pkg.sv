@@ -1,3 +1,4 @@
+`default_nettype none
 // =============================================================================
 // PipeFabric
 // =============================================================================
@@ -42,3 +43,5 @@ package pf_types_pkg;
     typedef logic signed   [7:0]  int8;
   
 endpackage
+
+`default_nettype wire
