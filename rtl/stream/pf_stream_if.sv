@@ -1,3 +1,30 @@
+// =============================================================================
+// PipeFabric
+// =============================================================================
+// File    : pf_stream_if.sv
+// Author  : Vladislav Temnyakov
+// Version : 0.1.0
+// Created : 2026-05-22
+//
+// Description:
+// -----------------------------------------------------------------------------
+// Generic streaming interface used across PipeFabric.
+//
+// Features:
+//   - Valid/ready handshake
+//   - Frame-aware transport
+//   - Optional sideband metadata
+//   - Master/slave modports
+//
+// Notes:
+//   - AXI-stream-like semantics
+//   - Lightweight and vendor-agnostic
+//   - Intended for FPGA streaming pipelines
+//
+// License:
+//   MIT License
+// =============================================================================
+
 interface pf_stream_if #(
 		    parameter int WIDTH = 32
 		);

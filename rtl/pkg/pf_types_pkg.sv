@@ -1,3 +1,29 @@
+// =============================================================================
+// PipeFabric
+// =============================================================================
+// File    : pf_types_pkg.sv
+// Author  : Vladislav Temnyakov
+// Version : 0.1.0
+// Created : 2026-05-22
+//
+// Description:
+// -----------------------------------------------------------------------------
+// Common synthesizable type definitions used across PipeFabric RTL.
+//
+// Includes:
+//   - Signed integer types
+//   - Unsigned integer types
+//   - Standardized bit-width aliases
+//
+// Notes:
+//   - FPGA-oriented
+//   - Vendor-independent
+//   - Synthesizable-only package
+//
+// License:
+//   MIT License
+// =============================================================================
+
 package pf_types_pkg;
 
     typedef logic          [63:0] uint64;
