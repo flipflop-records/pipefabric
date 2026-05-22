@@ -4,7 +4,7 @@
 // PipeFabric
 // =============================================================================
 // File    : pf_pipeline_stage.sv
-// Author  : Vladislav Temnyakov
+// Author  : flipflop-records
 // Version : 0.1.0
 // Created : 2026-05-22
 //
