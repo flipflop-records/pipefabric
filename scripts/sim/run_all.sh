@@ -8,6 +8,7 @@ echo "========================================"
 
 ./scripts/sim/run_pipeline_stage.sh
 ./scripts/sim/run_skid_buffer.sh
+./scripts/sim/run_fifo_sync.sh
 
 echo ""
 echo "========================================"
