@@ -33,10 +33,48 @@ The framework focuses on:
 ## Directory Structure
 
 ```text
-rtl/
-├── pkg/
-├── primitives/
-├── stream/
-├── fifo/
-├── cdc/
-└── dsp/
+pipefabric/
+├── rtl/
+│   ├── pkg/
+│   │   ├── pf_types_pkg.sv
+│   │   └── pf_logic_pkg.sv
+│   │
+│   ├── stream/
+│   │   ├── pf_stream_if.sv
+│   │   ├── pf_pipeline_stage.sv
+│   │   └── pf_skid_buffer.sv
+│   │
+│   ├── fifo/
+│   │   └── pf_fifo_sync.sv
+│   │
+│   ├── primitives/
+│   │
+│   ├── cdc/
+│   │
+│   └── dsp/
+│
+├── sim/
+│   ├── tb/
+│   │   ├── tb_pf_pipeline_stage.sv
+│   │   ├── tb_pf_skid_buffer.sv
+│   │   └── tb_pf_fifo_sync.sv
+│   │
+│   ├── cpp/
+│   │   ├── tb_pf_pipeline_stage.cpp
+│   │   ├── tb_pf_skid_buffer.cpp
+│   │   └── tb_pf_fifo_sync.cpp
+│   │
+│   └── waves/
+│
+├── scripts/
+│   └── sim/
+│       ├── run_pipeline_stage.sh
+│       ├── run_skid_buffer.sh
+│       ├── run_fifo_sync.sh
+│       └── run_all.sh
+│
+├── docs/
+│
+├── .gitignore
+├── README.md
+└── LICENSE
