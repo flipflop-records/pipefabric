@@ -107,50 +107,44 @@ Run individual tests:
 
 ```text
 pipefabric/
+├── .github/
+│   └── workflows/
+│       └── ci.yml
+│
 ├── rtl/
-│   ├── pkg/
-│   │   ├── pf_types_pkg.sv
-│   │   └── pf_logic_pkg.sv
-│   │
-│   ├── stream/
-│   │   ├── pf_stream_if.sv
-│   │   ├── pf_pipeline_stage.sv
-│   │   └── pf_skid_buffer.sv
-│   │
 │   ├── fifo/
 │   │   └── pf_fifo_sync.sv
 │   │
-│   ├── primitives/
+│   ├── pkg/
+│   │   ├── pf_logic_pkg.sv
+│   │   └── pf_types_pkg.sv
 │   │
-│   ├── cdc/
-│   │
-│   └── dsp/
+│   └── stream/
+│       ├── pf_pipeline_stage.sv
+│       ├── pf_skid_buffer.sv
+│       └── pf_stream_if.sv
 │
 ├── sim/
-│   ├── tb/
-│   │   ├── tb_pf_pipeline_stage.sv
-│   │   ├── tb_pf_skid_buffer.sv
-│   │   └── tb_pf_fifo_sync.sv
-│   │
 │   ├── cpp/
+│   │   ├── tb_pf_fifo_sync.cpp
 │   │   ├── tb_pf_pipeline_stage.cpp
-│   │   ├── tb_pf_skid_buffer.cpp
-│   │   └── tb_pf_fifo_sync.cpp
+│   │   └── tb_pf_skid_buffer.cpp
 │   │
-│   └── waves/
+│   └── tb/
+│       ├── tb_pf_fifo_sync.sv
+│       ├── tb_pf_pipeline_stage.sv
+│       └── tb_pf_skid_buffer.sv
 │
 ├── scripts/
 │   └── sim/
-│       ├── run_pipeline_stage.sh
-│       ├── run_skid_buffer.sh
+│       ├── run_all.sh
 │       ├── run_fifo_sync.sh
-│       └── run_all.sh
-│
-├── docs/
+│       ├── run_pipeline_stage.sh
+│       └── run_skid_buffer.sh
 │
 ├── .gitignore
-├── README.md
-└── LICENSE
+├── LICENSE
+└── README.md
 ```
 
 ---
